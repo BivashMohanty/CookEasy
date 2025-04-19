@@ -1,0 +1,122 @@
+/* HomeScreen.css */
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.homepage {
+  color: #fff;
+  background-color: #f4f4f4;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #003300;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.navbar nav a {
+  color: #fff;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.navbar nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+  background: url('https://images.unsplash.com/photo-1708335583165-57aa131a4969?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fGFzdGhldGljJTIwZm9vZHxlbnwwfHwwfHx8MA%3D%3D') no-repeat center center/cover;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 3rem;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #cce5cc;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #b2ffb2;
+  margin-bottom: 1.5rem;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px 0 0 6px;
+  background-color: #222;
+  color: #fff;
+}
+
+.search-box button {
+  padding: 0.8rem 1rem;
+  background-color: #003300;
+  color: #fff;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+}
+
+/* Categories */
+.categories {
+  padding: 3rem 2rem;
+  background-color: #ccffcc;
+  color: #003300;
+  text-align: center;
+}
+
+.categories h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.category-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.category-tag {
+  padding: 0.8rem 1.5rem;
+  background-color: #003300;
+  color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.category-tag:hover {
+  transform: scale(1.05);
+}
